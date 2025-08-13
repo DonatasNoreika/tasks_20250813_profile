@@ -1,3 +1,6 @@
 <h1>{{ task.name }}</h1>
 <p>Done? {{ task.done }}</p>
 <p>Created Date: {{ task.date_created }}</p>
+<p>Author: {{ task.user.username }}</p>
+{% load static %}
+<img src="{{ task.user.profile.photo.url }}" width="100px">
